@@ -1,0 +1,119 @@
+/* src/Header/Header.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: rgb(138, 136, 136);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Header Logo */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  letter-spacing: 4px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo-icon {
+  color: white;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Button Container */
+.button-container {
+  display: flex; /* Use flexbox for alignment */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Button Styles */
+.button-container .sign-up-btn,
+.log-in-btn {
+  padding: 10px 15px; /* Padding inside buttons */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.button-container .sign-up-btn {
+  background-color: #0ede76; /* Sign Up button color */
+  color: #333; /* Text color */
+}
+
+.sign-up-btn:hover {
+  background-color: #125c0b; /* Sign Up button hover color */
+  color: white;
+}
+
+.button-container .log-in-btn {
+  background-color: #444; /* Log In button color */
+  color: #fff; /* Text color */
+}
+
+.log-in-btn:hover {
+  background-color: #777; /* Log In button hover color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 5px; /* Reduced padding */
+  }
+
+  .header-logo {
+    font-size: 20px; /* Smaller font size */
+    margin-bottom: 5px; /* Space below logo */
+  }
+
+  .search-bar {
+    width: 100%; /* Full width for search bar */
+    margin-bottom: 10px; /* Space below search bar */
+  }
+
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    width: 100%; /* Full width for buttons */
+    align-items: flex-start; /* Align buttons to the start */
+  }
+
+  .button-container .sign-up-btn,
+  .button-container .log-in-btn {
+    width: 100%; /* Full width for buttons */
+    margin-bottom: 5px; /* Space between buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 3px; /* Further reduced padding */
+  }
+
+  .header-logo {
+    font-size: 18px; /* Even smaller font size */
+  }
+
+  .button-container .sign-up-btn,
+  .button-container .log-in-btn {
+    padding: 8px; /* Reduced padding in buttons */
+    font-size: 14px; /* Smaller font size */
+  }
+}

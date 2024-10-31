@@ -1,0 +1,46 @@
+/* src/components/WorkInProgress.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .icon {
+    font-size: 48px;
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .link {
+    font-size: 15px;
+    color: #007BFF;
+}
+.link:hover{
+      text-decoration: underline;
+  color:aliceblue;
+  }
+  

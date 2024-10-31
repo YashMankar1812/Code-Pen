@@ -1,0 +1,69 @@
+/* src/components/StarredPage.css */
+
+.starred-page {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #282c34;
+    color: #f4f4f4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .starred-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f9c74f; /* Gold color for star accents */
+  }
+  
+  .starred-content {
+    padding: 10px;
+  }
+  
+  .starred-section {
+    background-color: #333841;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #f9c74f;
+  }
+  
+  .section-icon {
+    margin-right: 8px;
+  }
+  
+  .section-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .section-item {
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    color: #f4f4f4;
+    background-color: #3c414c;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+  }
+  
+  .section-item:hover {
+    background-color: #50555f;
+    cursor: pointer;
+  }
+  
+  .star-icon {
+    margin-right: 8px;
+    color: #f9c74f;
+  }
+  

@@ -1,0 +1,99 @@
+/* src/components/Editor.css */
+
+/* Editor container */
+.editor {
+  background-color: black;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Button styles */
+.editor-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.code-mirror .html {
+  color: rgb(194, 126, 1);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.code-mirror .css {
+  color: rgb(54, 54, 198);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.code-mirror .js {
+  color: rgb(187, 187, 7);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; 
+  color: white;
+}
+.close-btn:hover {
+  color: #ff0000; 
+}
+
+.run-code-btn {
+  background-color: #38c470;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.run-code-btn:hover {
+  background-color: #25a049;
+}
+
+/* Editor content area */
+.editor-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 1rem;
+}
+
+.code-mirror {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
+  height: 80%;
+}
+
+/* CodeMirror styling */
+.code-editor {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Output section */
+.output {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.output h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: rgb(135, 134, 134);
+}
+
+.output-frame {
+  width: 100%;
+  height: 250px;
+  background: whitesmoke;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

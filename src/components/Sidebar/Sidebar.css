@@ -1,0 +1,112 @@
+.sidebar {
+    width: 250px; 
+    background-color: #222;
+    color:aliceblue; 
+    transition: width 0.3s ease; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    position: relative; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar.collapsed {
+    width: 50px; 
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-logo {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar-nav .start-coding-btn {
+    display: block; 
+    background-color: black; 
+    border: 3px solid #ff4081; 
+    font-weight: bold;
+    color: white; 
+    padding: 19px 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-bottom: auto; 
+    position: relative; 
+    overflow: hidden; 
+    animation: border-color-animation 2s infinite; 
+}
+
+/* Keyframes for random border color in 10 20 30 40 50 */
+
+@keyframes border-color-animation {
+    0% { border-color: #ff4081; }
+    10% { border-color: #ff8a65; }
+    20% { border-color: #fbc02d; }
+    30% { border-color: #f4511e; }
+    40% { border-color: #e64a19; }
+    50% { border-color: #d32f2f; }
+    60% { border-color: #b71c1c; }
+    70% { border-color: #9c27b0; }
+    80% { border-color: #7e57c2; }
+    90% { border-color: #673ab7; }
+    100% { border-color: #ff4081; }
+}
+
+/* Collapse button styling */
+.collapse-btn {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.collapse-btn:hover {
+    color: #ff4081;
+}
+
+/* Sidebar navigation styles */
+.sidebar-nav {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.sidebar-nav li {
+    margin: 10px 0; 
+}
+
+.sidebar-link {
+    display: flex; 
+    align-items: center; 
+    color:rgb(142, 140, 140); 
+    text-decoration: none; 
+    padding: 10px; 
+    border-radius: 5px;
+    transition: background 0.3s ease; 
+}
+
+.sidebar-link:hover {
+    background-color: #4e4d4d; 
+    color: white;
+}
+.sidebar-icon {
+    margin-right: 10px; 
+    font-size: 18px;
+}

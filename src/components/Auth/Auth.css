@@ -1,0 +1,137 @@
+  /* src/components/Auth.css */
+
+  .auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0a0a;
+    height: 100vh;
+  }
+  .row{
+    display: flex;
+    background-color: #222;
+  }
+  /* .slider-cont{
+
+  } */
+  .editor-cont{
+    flex-grow: 1;
+    background-color: #0a0a0a;
+    /* margin-top: 20px; */
+  }
+  .auth-container {
+    max-width: 400px;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  #email,#pass,#cpass{
+   color: #ccc;
+   /* letter-spacing: 2px; */
+   padding: 10px;
+    width: 100%;
+  }
+
+  h2 {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    color: rgb(135, 134, 134);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+  }
+  .auth-container p{
+    display: flex;
+    justify-content: center;
+    color: rgb(139, 138, 138);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  .auth-container .auth-logo{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 20px;
+    height: 60px;
+    gap: 20px;
+    color: white;
+  }
+
+  .codepen-icon-heading {
+    color: #339e58;
+    margin-right: 10px; 
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e7e2e2;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #339e58;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #108c52;
+  }
+
+ .google-btn {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #357ae8, #2a9d47, #e2a701, #d93025);
+    color: white;
+    padding: 10px;
+    width: 10%;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Smooth hover transition */
+  }
+
+  .auth-container .google-btn:hover {
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+
+  .toggle-link {
+    color: #007bff;
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 5px;
+  }
+  .text{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .toggle-link:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .auth-container {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  }
